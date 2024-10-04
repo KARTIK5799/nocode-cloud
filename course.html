@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NoCode Academy - Cloud Computing Masterclass</title>
+        <!-- Tailwind CSS CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <!-- Font Awesome for Icons (Optional) -->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      
+        <!-- Additional Meta and Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="font-sans bg-gray-900 text-white">
+
+    <!-- Top Navbar -->
+    <div class="bg-white w-screen h-12 fixed z-20 flex justify-center items-center overflow-hidden">
+      <div class="flex justify-between gap-1 md:gap-10 items-center container mx-auto px-1 md:px-4">
+          <div class="bg-black text-white rounded-lg px-1 md:px-2 py-0 md:py-1 hidden md:block">New</div>
+          <p class="font-bold text-sm md:text-lg">Cloud Computing Masterclass</p>
+          <a href="#" class="hidden md:block underline text-sm text-blue-600">30% off + 2x mentoring</a>
+          <div id="countdown" class="bg-black text-white rounded-lg px-1 py-0 md:px-2 md:py-1 flex items-center space-x-2">
+              <span class="clock-icon hidden md:block">⏰</span>
+              <span id="days" class="md:mr-1">0</span><span class="mr-1">Days</span>
+              <span id="hours" class="md:mr-1">0</span><span class="mr-1">Hours</span>
+              <span id="minutes" class="md:mr-1">0</span><span class="mr-1">Mins</span>
+              <span id="seconds" class="md:mr-1">0</span><span>Secs</span>
+          </div>
+      </div>
+    </div>
+    
+    <!-- Main Navbar -->
+    <nav id="navbar" class="bg-gray-800 bg-opacity-50 p-4 mt-12 text-white fixed w-full z-10 transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="./index.html" class="text-2xl logo">No<span>Code</span></a>
+            <div class="hidden md:flex md:gap-10">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./about.html" class="nav-link">About</a>
+                <a href="./contact.html" class="nav-link">Contact</a>
+                <a href="./course.html" class="nav-link">Courses</a>
+            </div>
+            <a class="register-link cursor-pointer hidden md:flex items-center" href="./course.html">Explore 
+                <span class="material-symbols-outlined ml-1">arrow_outward</span>
+            </a>
+            <button id="menu-button" class="md:hidden focus:outline-none">
+                <span id="menu-icon" class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-90 absolute top-full left-0 w-full z-30 transition-all duration-300">
+            <a href="./index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">Home</a>
+            <a href="./about.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">About</a>
+            <a href="./contact.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">Contact</a>
+            <a href="./course.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">Courses</a>
+            <a href="./course.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-700 flex items-center">
+                Explore 
+                <span class="material-symbols-outlined ml-1">arrow_outward</span>
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-24 bg-transparent text-white course-hero">
+      <div class="container mx-auto text-center py-20">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">The Complete Path to Cloud Computing Mastery</h1>
+        <p class="text-lg md:text-xl mb-6">Get ahead of the game by mastering Linux, AWS, and DevOps with NoCode Academy.</p>
+        <a href="#pricing" class="bg-red-500 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-gray-200 transition">Enroll Today for ₹7999</a>
+        <div class="mt-4">
+          <a href="https://www.youtube.com" class="underline text-white">Watch Trailer</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Top Features Section -->
+    <section class="py-16 px-4">
+      <div class="container mx-auto text-center">
+        <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">Top Features</h6>
+        <h2 class="text-4xl md:text-6xl font-bold mb-5">Why Learn Cloud Computing with NoCode Academy?</h2>
+        <p class="text-center mb-20 text-gray-200">
+          Elevate your cloud skills with our comprehensive course or gain unlimited access to all our programs with the All Access pass.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature Card -->
+          <div class="border rounded-lg shadow p-6 bg-white hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold mb-4 text-red-500">Up-To-Date Curriculum</h3>
+            <p class="text-gray-600">Stay current with the latest cloud technologies and methodologies through our regularly updated course content.</p>
+          </div>
+          <div class="border rounded-lg shadow p-6 bg-white hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold mb-4 text-red-500">8-Week Personalized Mentorship</h3>
+            <p class="text-gray-600">Receive one-on-one guidance from seasoned cloud professionals dedicated to your success.</p>
+          </div>
+          <div class="border rounded-lg shadow p-6 bg-white hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-semibold mb-4 text-red-500">Hands-On Projects</h3>
+            <p class="text-gray-600">Apply your skills immediately with real-world projects, building a portfolio that showcases your expertise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Course Overview Section -->
+    <section class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm py-16">
+      <div class="container mx-auto text-center">
+        <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">Comprehensive Cloud Training</h6>
+        <h2 class="text-4xl md:text-6xl font-bold mb-5">Course Overview</h2>
+        <p class="text-center mb-20 text-gray-200">
+          Dive into the world of cloud computing with our immersive course. Learn to manage Linux systems, deploy and scale applications on AWS, and implement DevOps practices that drive efficiency and innovation.
+        </p>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2">
+            <img src="./assets/images/cloud-overview.jpg" alt="Cloud Computing Course Overview" class="rounded-lg shadow-lg">
+          </div>
+          <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+            <h3 class="text-2xl font-semibold mb-4 text-red-500">What You'll Learn</h3>
+            <p class="mb-4 text-gray-200">
+              Our cloud computing course covers everything from foundational principles to advanced techniques. You'll gain hands-on experience with Linux administration, AWS services, and DevOps tools, equipping you with the skills needed to excel in today's cloud-driven industry.
+            </p>
+            <a href="#pricing" class="inline-block bg-red-500 hover:bg-red-600 text-white text-lg font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out">
+              View Pricing
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Course Curriculum Section -->
+    <section class="py-16 px-4">
+      <div class="container mx-auto text-center">
+        <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">In-Depth Curriculum</h6>
+        <h2 class="text-4xl md:text-6xl font-bold mb-5">Course Curriculum</h2>
+        <p class="text-center mb-20 text-gray-200">
+          Our structured curriculum takes you from cloud fundamentals to advanced deployment and automation strategies, ensuring a comprehensive learning experience.
+        </p>
+        
+        <!-- Tabs for Overview, Curriculum, Instructor, Reviews, FAQ, Pricing -->
+        <div class="mb-12 flex justify-center space-x-4 flex-wrap">
+          <a href="#overview" class="text-lg font-semibold text-gray-500 hover:text-red-500">Overview</a>
+          <a href="#curriculum" class="text-lg font-semibold text-red-500 border-b-2 border-red-500 pb-1">Curriculum</a>
+          <a href="#instructor" class="text-lg font-semibold text-gray-500 hover:text-red-500">Instructor</a>
+          <a href="#reviews" class="text-lg font-semibold text-gray-500 hover:text-red-500">Reviews</a>
+          <a href="#faq" class="text-lg font-semibold text-gray-500 hover:text-red-500">FAQ</a>
+          <a href="#pricing" class="text-lg font-semibold text-gray-500 hover:text-red-500">Pricing</a>
+        </div>
+    
+        <!-- Curriculum Content -->
+        <div class="space-y-12">
+          
+          <!-- Month 1: Cloud Fundamentals -->
+          <div class="border shadow-md rounded-lg overflow-hidden">
+            <div class="border-b px-6 py-4 bg-red-500">
+              <h4 class="text-xl font-semibold text-white">Month 1: Cloud Fundamentals (24 hours)</h4>
+            </div>
+            <div class="p-6">
+              <!-- Accordion for Weeks -->
+              <div class="space-y-4">
+                
+                <!-- Week 1 -->
+                <div class="border rounded-lg">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                    <h5 class="text-lg font-semibold text-gray-200">Week 1: Introduction to Cloud Computing & Linux Fundamentals (6 hours)</h5>
+                  </button>
+                  <div class="px-4 py-2 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-white">
+                      <li><strong>Day 1:</strong> Cloud Computing Basics & Linux Introduction (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Overview of cloud computing principles and architecture.</li>
+                          <li>Introduction to Linux operating system and basic commands.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 2:</strong> Linux System Administration (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Manage users, permissions, and system processes in Linux.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 3:</strong> Linux Networking & Security (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Configure networking settings and implement security best practices in Linux.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <!-- Week 2 -->
+                <div class="border rounded-lg">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                    <h5 class="text-lg font-semibold text-gray-200">Week 2: AWS Fundamentals & Services (6 hours)</h5>
+                  </button>
+                  <div class="px-4 py-2 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-white">
+                      <li><strong>Day 1:</strong> AWS Introduction & Core Services (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Introduction to AWS and its core services like EC2, S3, and RDS.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 2:</strong> AWS Networking & Security (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Configure VPCs, security groups, and IAM roles in AWS.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 3:</strong> AWS Storage Solutions (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Explore various AWS storage options and their use cases.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <!-- Week 3 -->
+                <div class="border rounded-lg">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                    <h5 class="text-lg font-semibold text-gray-200">Week 3: DevOps Principles & Tools (6 hours)</h5>
+                  </button>
+                  <div class="px-4 py-2 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-white">
+                      <li><strong>Day 1:</strong> Introduction to DevOps & CI/CD Pipelines (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Understand DevOps culture and implement Continuous Integration/Continuous Deployment pipelines.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 2:</strong> Automation with Ansible & Jenkins (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Automate infrastructure provisioning and deployment processes using Ansible and Jenkins.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 3:</strong> Containerization with Docker & Kubernetes (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Learn containerization concepts and manage containers with Docker and Kubernetes.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <!-- Week 4 -->
+                <div class="border rounded-lg">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                    <h5 class="text-lg font-semibold text-gray-200">Week 4: Advanced AWS Services & Best Practices (6 hours)</h5>
+                  </button>
+                  <div class="px-4 py-2 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-white">
+                      <li><strong>Day 1:</strong> AWS Lambda & Serverless Architecture (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Implement serverless applications using AWS Lambda.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 2:</strong> AWS Monitoring & Optimization (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Monitor AWS resources and optimize performance and costs.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 3:</strong> AWS Security Best Practices (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Enhance security measures and implement best practices in AWS environments.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+          <!-- Month 2: Infrastructure as Code & Automation -->
+          <div class="border shadow-md rounded-lg overflow-hidden">
+            <div class="border-b px-6 py-4 bg-red-500">
+              <h4 class="text-xl font-semibold text-white">Month 2: Infrastructure as Code & Automation (24 hours)</h4>
+            </div>
+            <div class="p-6">
+              <!-- Accordion for Weeks -->
+              <div class="space-y-4">
+                
+                <!-- Week 5 -->
+                <div class="border rounded-lg">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                    <h5 class="text-lg font-semibold text-gray-200">Week 5: Terraform for Infrastructure Management (6 hours)</h5>
+                  </button>
+                  <div class="px-4 py-2 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-white">
+                      <li><strong>Day 1:</strong> Introduction to Terraform (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Understand the basics of Infrastructure as Code with Terraform.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 2:</strong> Writing Terraform Configurations (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Create and manage infrastructure using Terraform scripts.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 3:</strong> Terraform Modules & Best Practices (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Organize Terraform configurations using modules and follow best practices.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <!-- Week 6 -->
+                <div class="border rounded-lg">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                    <h5 class="text-lg font-semibold text-gray-200">Week 6: Ansible for Configuration Management (6 hours)</h5>
+                  </button>
+                  <div class="px-4 py-2 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-white">
+                      <li><strong>Day 1:</strong> Introduction to Ansible (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Learn the fundamentals of Ansible for automating IT tasks.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 2:</strong> Writing Ansible Playbooks (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Create playbooks to automate configuration and deployment tasks.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 3:</strong> Ansible Roles & Best Practices (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Organize Ansible configurations using roles and follow best practices.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <!-- Week 7 -->
+                <div class="border rounded-lg">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                    <h5 class="text-lg font-semibold text-gray-200">Week 7: Jenkins for Continuous Integration (6 hours)</h5>
+                  </button>
+                  <div class="px-4 py-2 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-white">
+                      <li><strong>Day 1:</strong> Setting Up Jenkins (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Install and configure Jenkins for CI/CD pipelines.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 2:</strong> Creating Jenkins Pipelines (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Develop pipelines to automate build, test, and deployment processes.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 3:</strong> Integrating Jenkins with Git & AWS (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Integrate Jenkins with Git repositories and deploy applications to AWS.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <!-- Week 8 -->
+                <div class="border rounded-lg">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                    <h5 class="text-lg font-semibold text-gray-200">Week 8: Kubernetes for Container Orchestration (6 hours)</h5>
+                  </button>
+                  <div class="px-4 py-2 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-white">
+                      <li><strong>Day 1:</strong> Introduction to Kubernetes (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Understand the basics of Kubernetes and its architecture.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 2:</strong> Deploying Applications on Kubernetes (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Learn how to deploy and manage containerized applications using Kubernetes.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 3:</strong> Kubernetes Networking & Security (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Configure networking and implement security measures in Kubernetes clusters.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+          <!-- Month 3: Advanced DevOps Practices -->
+          <div class="border shadow-md rounded-lg overflow-hidden">
+            <div class="border-b px-6 py-4 bg-red-500">
+              <h4 class="text-xl font-semibold text-white">Month 3: Advanced DevOps Practices (24 hours)</h4>
+            </div>
+            <div class="p-6">
+              <!-- Accordion for Weeks -->
+              <div class="space-y-4">
+                
+                <!-- Week 9 -->
+                <div class="border rounded-lg">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                    <h5 class="text-lg font-semibold text-gray-200">Week 9: Advanced CI/CD Pipelines (6 hours)</h5>
+                  </button>
+                  <div class="px-4 py-2 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-white">
+                      <li><strong>Day 1:</strong> Multi-Stage Pipelines (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Design and implement multi-stage CI/CD pipelines for complex applications.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 2:</strong> Pipeline Optimization & Caching (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Optimize pipelines for faster builds and efficient resource usage.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 3:</strong> Integrating Automated Testing (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Incorporate automated testing into CI/CD pipelines to ensure code quality.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <!-- Week 10 -->
+                <div class="border rounded-lg">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                    <h5 class="text-lg font-semibold text-gray-200">Week 10: Monitoring & Logging with Prometheus & Grafana (6 hours)</h5>
+                  </button>
+                  <div class="px-4 py-2 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-white">
+                      <li><strong>Day 1:</strong> Setting Up Prometheus (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Install and configure Prometheus for monitoring applications and infrastructure.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 2:</strong> Creating Dashboards with Grafana (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Design and build informative dashboards using Grafana to visualize metrics.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 3:</strong> Alerting & Incident Management (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Implement alerting rules and manage incidents effectively.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <!-- Week 11 -->
+                <div class="border rounded-lg">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                    <h5 class="text-lg font-semibold text-gray-200">Week 11: Security in DevOps (6 hours)</h5>
+                  </button>
+                  <div class="px-4 py-2 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-white">
+                      <li><strong>Day 1:</strong> DevSecOps Principles (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Integrate security practices into the DevOps workflow.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 2:</strong> Implementing Security Automation (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Automate security checks and vulnerability assessments within pipelines.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 3:</strong> Compliance & Governance (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Ensure compliance with industry standards and implement governance policies.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <!-- Week 12 -->
+                <div class="border rounded-lg">
+                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                    <h5 class="text-lg font-semibold text-gray-200">Week 12: Infrastructure Monitoring & Optimization (6 hours)</h5>
+                  </button>
+                  <div class="px-4 py-2 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-white">
+                      <li><strong>Day 1:</strong> Advanced Monitoring Techniques (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Implement advanced monitoring strategies for large-scale infrastructures.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 2:</strong> Performance Optimization (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Optimize system performance and resource utilization.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Day 3:</strong> Cost Management in AWS (2 hours)
+                        <ul class="list-disc list-inside ml-5">
+                          <li>Manage and optimize AWS costs effectively.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </section>
+    
+      <!-- Instructor Section -->
+      <section id="instructor" class="py-16 px-4 bg-gray-800">
+        <div class="container mx-auto text-center">
+          <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">Meet Your Instructors</h6>
+          <h2 class="text-4xl md:text-6xl font-bold mb-5">Our Expert Instructors</h2>
+          <p class="text-center mb-20 text-gray-200">
+            Learn from industry leaders who bring real-world experience and insights to help you excel in cloud computing.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Instructor Card -->
+            <div class="border rounded-lg shadow p-6 bg-transparent flex text-white">
+              <img src="https://via.placeholder.com/200x200" alt="John Doe" class="rounded-full mx-auto mb-4">
+              <div class="flex flex-col items-start justify-center ml-4">
+                  <h3 class="text-2xl font-semibold mb-2">John Doe</h3>
+                  <p class="text-gray-300 mb-4">Senior Cloud Architect at CloudTech</p>
+                  <p class="text-gray-300">John has over 15 years of experience in cloud infrastructure and DevOps. He specializes in AWS architecture and automation.</p>
+              </div>
+            </div>
+            <!-- Instructor Card -->
+            <div class="border rounded-lg shadow p-6 bg-transparent flex text-white">
+              <img src="https://via.placeholder.com/200x200" alt="Emily Clark" class="rounded-full mx-auto mb-4">
+              <div class="flex flex-col items-start justify-center ml-4">
+                  <h3 class="text-2xl font-semibold mb-2">Emily Clark</h3>
+                  <p class="text-gray-300 mb-4">DevOps Engineer at Innovatech</p>
+                  <p class="text-gray-300">Emily is a seasoned DevOps engineer with expertise in CI/CD pipelines, containerization, and infrastructure automation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Testimonials/Reviews Section -->
+      <section id="reviews" class="py-16 px-4">
+        <div class="container mx-auto text-center">
+          <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">What Our Students Say</h6>
+          <h2 class="text-4xl md:text-6xl font-bold mb-5">Testimonials</h2>
+          <p class="text-center mb-20 text-gray-200">
+            Hear from our students who have transformed their careers through our Cloud Computing program.
+          </p>
+          <div class="space-y-8">
+            <!-- Testimonial Card -->
+            <div class="bg-transparent border border-gray-50 shadow-md rounded-lg p-6">
+              <p class="text-gray-300 mb-4">"NoCode Academy's Cloud Computing course provided me with the skills and confidence to manage AWS infrastructure efficiently. The mentors were incredibly supportive!"</p>
+              <h4 class="text-lg font-semibold">- Alex Smith</h4>
+            </div>
+            <!-- Testimonial Card -->
+            <div class="bg-transparent border border-gray-50 shadow-md rounded-lg p-6">
+              <p class="text-gray-300 mb-4">"The hands-on projects and personalized feedback helped me build a portfolio that impressed employers. Highly recommend!"</p>
+              <h4 class="text-lg font-semibold">- Maria Garcia</h4>
+            </div>
+            <!-- Testimonial Card -->
+            <div class="bg-transparent border border-gray-50 shadow-md rounded-lg p-6">
+              <p class="text-gray-300 mb-4">"John Doe's mentorship was invaluable. He guided me through complex cloud architecture challenges and helped me grow as a Cloud Engineer."</p>
+              <h4 class="text-lg font-semibold">- Liam Brown</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- FAQ Section -->
+      <section id="faq" class="py-16 px-4 bg-gray-700">
+        <div class="container mx-auto text-center">
+          <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">Frequently Asked Questions</h6>
+          <h2 class="text-4xl md:text-6xl font-bold mb-5">FAQ</h2>
+          <p class="text-center mb-20 text-gray-200">
+            Find answers to the most common questions about our Cloud Computing course.
+          </p>
+          <!-- Accordion for FAQs -->
+          <div class="max-w-2xl mx-auto space-y-4">
+            <!-- FAQ Item -->
+            <div class="border rounded-lg">
+              <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-900 rounded overflow-hidden">
+                <h5 class="text-lg font-semibold text-gray-300">What prerequisites are required?</h5>
+              </button>
+              <div class="px-4 py-2 hidden">
+                <p class="text-gray-300">No prior experience in cloud computing is required. This course is suitable for beginners and those looking to enhance their cloud skills.</p>
+              </div>
+            </div>
+            <!-- FAQ Item -->
+            <div class="border rounded-lg">
+              <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                <h5 class="text-lg font-semibold text-gray-200">How long is the course?</h5>
+              </button>
+              <div class="px-4 py-2 hidden">
+                <p class="text-gray-300">The course spans 4 months, with each month dedicated to specific aspects of cloud computing.</p>
+              </div>
+            </div>
+            <!-- FAQ Item -->
+            <div class="border rounded-lg">
+              <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
+                <h5 class="text-lg font-semibold text-gray-200">Will I receive a certificate upon completion?</h5>
+              </button>
+              <div class="px-4 py-2 hidden">
+                <p class="text-gray-300">Yes, all students who successfully complete the course will receive a certificate of completion from NoCode Academy.</p>
+              </div>
+            </div>
+            <!-- Add more FAQs as needed -->
+          </div>
+        </div>
+      </section>
+    
+      <!-- Pricing Section -->
+      <section id="pricing" class="py-16 px-4">
+          <div class="container mx-auto text-center">
+            <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">Affordable Pricing</h6>
+            <h2 class="text-4xl md:text-6xl font-bold mb-5">Choose Your Plan</h2>
+            <p class="text-center mb-20 text-gray-200">
+              Select a plan that fits your learning style and career goals.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+              <!-- Pricing Card 1 -->
+              <div class="border rounded-lg shadow p-6 bg-white w-full md:w-1/3">
+                <h3 class="text-2xl font-semibold mb-4">Basic</h3>
+                <p class="text-gray-600 mb-6">Access to recorded sessions and all course materials for 4 months.</p>
+                <span class="text-4xl font-bold text-red-500 mb-6 block">₹4999</span>
+                <button disabled class="inline-block bg-gray-300 text-gray-500 text-lg font-bold py-3 px-6 rounded-lg cursor-not-allowed">
+                  Enroll Now
+                </button>
+              </div>
+              <!-- Pricing Card 2 -->
+              <div class="border rounded-lg shadow p-6 bg-white w-full md:w-1/3">
+                <h3 class="text-2xl font-semibold mb-4">Pro</h3>
+                <p class="text-gray-600 mb-6">Access to live lectures and unlimited course materials for 4 months.</p>
+                <span class="text-4xl font-bold text-red-500 mb-6 block">₹7999</span>
+                <a href="https://wa.me/919226883054?text=I%20am%20interested%20in%20your%20Cloud%20Computing%20Masterclass%20and%20would%20like%20more%20information."
+                   class="inline-block bg-red-500 hover:bg-red-600 text-white text-lg font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out">
+                  Enroll Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+    
+    <!-- Footer -->
+    <footer class="bg-transparent py-4 text-white text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2024 NoCode Academy. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="#" class="mx-2 text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="#" class="mx-2 text-gray-400 hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    
+      <!-- JavaScript for Countdown Timer and Accordion -->
+      <script>
+        // Set the target date and time
+        const targetDate = new Date("October 5, 2024 12:00:00").getTime();
+    
+        // Update the countdown every second
+        const countdownInterval = setInterval(() => {
+          const now = new Date().getTime();
+          const distance = targetDate - now;
+    
+          // Time calculations
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+          // Display the result
+          document.getElementById("days").innerText = days;
+          document.getElementById("hours").innerText = hours;
+          document.getElementById("minutes").innerText = minutes;
+          document.getElementById("seconds").innerText = seconds;
+    
+          // If the countdown is over
+          if (distance < 0) {
+            clearInterval(countdownInterval);
+            document.getElementById("countdown").innerHTML = "Expired";
+          }
+        }, 1000);
+    
+        // Accordion Functionality
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+              const content = button.nextElementSibling;
+      
+              // Toggle visibility
+              content.classList.toggle('hidden');
+      
+              // Close other accordions within the same parent
+              const parent = button.parentElement.parentElement;
+              parent.querySelectorAll('.hidden').forEach(otherContent => {
+                if (otherContent !== content) {
+                  otherContent.classList.add('hidden');
+                }
+              });
+            });
+        });
+    
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+    
+            // Toggle menu visibility on button click
+            menuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden'); // Toggle the hidden class
+    
+                // Toggle between "menu" and "close" icon
+                if (menuIcon.textContent.trim() === 'menu') {
+                    menuIcon.textContent = 'close';
+                } else {
+                    menuIcon.textContent = 'menu';
+                }
+            });
+        });
+      </script>
+    
+    </body>
+</html>

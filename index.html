@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoCode Academy - Learn Cloud Technologies: Linux, AWS, DevOps</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans bg-gray-900">
+  
+    <!-- Top Navbar -->
+    <div class="bg-white w-screen h-12 fixed z-20 flex justify-center items-center overflow-hidden">
+      <div class="flex justify-between gap-1 md:gap-10 items-center container mx-auto px-1 md:px-4">
+          <div class="bg-black text-white rounded-lg px-1 md:px-2 py-0 md:py-1 hidden md:block">New</div>
+          <p class="font-bold text-sm md:text-lg">Cloud Computing MasterClass</p>
+          <a href="#" class="hidden md:block underline text-sm text-blue-600">30% off + 2x mentoring</a>
+          <div id="countdown" class="bg-black text-white rounded-lg px-1 py-0 md:px-2 md:py-1 flex items-center space-x-2">
+              <span class="clock-icon hidden md:block">⏰</span>
+              <span id="days" class="md:mr-1">0</span><span class="mr-1">Days</span>
+              <span id="hours" class="md:mr-1">0</span><span class="mr-1">Hours</span>
+              <span id="minutes" class="md:mr-1">0</span><span class="mr-1">Mins</span>
+              <span id="seconds" class="md:mr-1">0</span><span>Secs</span>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Main Navbar -->
+  <nav id="navbar" class="bg-gray-800 bg-opacity-50 p-4 mt-12 text-white fixed w-full z-10 transition-all duration-300">
+      <div class="container mx-auto flex justify-between items-center">
+          <a href="./index.html" class="text-2xl logo">No<span>Code</span></a>
+          <div class="hidden md:flex md:gap-10">
+              <a href="./index.html" class="nav-link">Home</a>
+              <a href="./about.html" class="nav-link">About</a>
+              <a href="./contact.html" class="nav-link">Contact</a>
+              <a href="./course.html" class="nav-link">Courses</a>
+          </div>
+          <a class="register-link cursor-pointer hidden md:flex items-center" href="./course.html">Explore 
+              <span class="material-symbols-outlined ml-1">arrow_outward</span>
+          </a>
+          <button id="menu-button" class="md:hidden focus:outline-none">
+              <span id="menu-icon" class="material-symbols-outlined">menu</span>
+          </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-90 absolute top-full left-0 w-full z-30 transition-all duration-300">
+          <a href="./index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">Home</a>
+          <a href="./about.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">About</a>
+          <a href="./contact.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">Contact</a>
+          <a href="./course.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">Courses</a>
+          <a href="./course.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-700 flex items-center">
+              Explore 
+              <span class="material-symbols-outlined ml-1">arrow_outward</span>
+          </a>
+      </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="bg-transparent min-h-screen flex flex-col lg:flex-row justify-center items-center text-white relative overflow-hidden pt-32">
+      <div id="blob-container" class="absolute inset-0 z-0"></div>
+      <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center lg:gap-16 px-4 py-8">
+          <div class="lg:w-1/2 flex flex-col justify-center">
+              <h1 class="hero-title text-3xl md:text-4xl xl:text-6xl font-extrabold tracking-tight leading-none mb-4">Master Cloud Technologies: Linux, AWS, DevOps</h1>
+              <p class="hero-description text-gray-300 mb-6 md:text-lg lg:text-xl">Empowering individuals to achieve their career goals through comprehensive, hands-on cloud training. Whether you’re a beginner or looking to advance your skills, we provide the resources you need to thrive in the tech industry.</p>
+              
+              <div class="flex flex-col sm:flex-row gap-4">
+                  <a href="./course.html" class="inline-flex items-center justify-center text-black px-5 py-3 text-base font-medium bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
+                     Find Your Course
+                  </a> 
+                  <a href="#whyNocode" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300">
+                     Why NoCode Academy?
+                      <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </a>
+              </div>
+
+              <div class="flex items-center p-4 rounded-lg mt-10 overflow-hidden bg-gray-800 bg-opacity-50">
+                <div class="flex -space-x-3">
+                  <div class="h-12 w-12 rounded-full overflow-hidden border-2 border-gray-100">
+                    <img class="object-cover h-full w-full" src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student 1">
+                  </div>
+                  <div class="h-12 w-12 rounded-full overflow-hidden border-2 border-gray-100">
+                    <img class="object-cover h-full w-full" src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student 2">
+                  </div>
+                  <div class="h-12 w-12 rounded-full overflow-hidden border-2 border-gray-100">
+                    <img class="object-cover h-full w-full" src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student 3">
+                  </div>
+                  <div class="h-12 w-12 rounded-full overflow-hidden border-2 border-gray-100">
+                    <img class="object-cover h-full w-full" src="https://images.pexels.com/photos/4145195/pexels-photo-4145195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student 4">
+                  </div>
+                  <div class="h-12 w-12 rounded-full overflow-hidden border-2 border-gray-100">
+                    <img class="object-cover h-full w-full" src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student 5">
+                  </div>
+                </div>
+                <div class="flex flex-col justify-center ml-4">
+                  <p class="text-sm font-semibold text-gray-200">NoCode Academy courses are rated:</p>
+                  <img src="./assets/images/rating.png" alt="Rating" class="w-40 mt-1">
+                </div>
+              </div>
+          </div>
+
+          <div class="w-full lg:w-1/2 flex justify-center mb-10 lg:mb-0">
+              <img src="./assets/images/hero-cloud.png" alt="Cloud Training Mockup" class="h-56 md:h-72 lg:h-full w-auto">
+          </div>
+      </div>
+  </section>
+
+    <!-- Designs Section -->
+    <section id="projects" class="bg-transparent text-white py-16 px-4">
+      <div class="container mx-auto text-center">
+        <h6 class="text-sm md:text-lgxl text-red-200 font-bold mt-20">See The Difference</h6>
+        <h2 class="text-4xl md:text-6xl font-bold mb-5">Projects Our Students Completed</h2>
+          <p class="text-center mb-20">Explore the impressive cloud solutions created by our students after completing our courses.</p>
+
+          
+          <div class="flex w-full h-screen justify-center items-center ">
+            <div class="wrapper">
+              <div class="itemLeft item1">
+                  <img src="./assets/images/cloud-project1.png" alt="Project 1">
+              </div>
+              <div class="itemLeft item2">
+                  <img src="./assets/images/cloud-project2.png" alt="Project 2">
+              </div>
+              <div class="itemLeft item3">
+                 <img src="./assets/images/cloud-project3.png" alt="Project 3">
+              </div>
+          
+             
+            </div>
+            <div class="wrapper">
+              <div class="itemRight item1">
+                  <img src="./assets/images/cloud-project4.png" alt="Project 4">
+              </div>
+              <div class="itemRight item2">
+                  <img src="./assets/images/cloud-project5.png" alt="Project 5">
+              </div>
+              <div class="itemRight item3">
+                 <img src="./assets/images/cloud-project6.png" alt="Project 6">
+              </div>
+            
+            </div>
+            <div class="wrapper">
+              <div class="itemLeft item1">
+                  <img src="./assets/images/cloud-project7.png" alt="Project 7">
+              </div>
+              <div class="itemLeft item2">
+                  <img src="./assets/images/cloud-project8.png" alt="Project 8">
+              </div>
+              <div class="itemLeft item3">
+                 <img src="./assets/images/cloud-project9.png" alt="Project 9">
+              </div>
+              
+            </div>
+          </div>
+          </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm py-16">
+      <div class="container mx-auto px-6 md:px-12 text-center">
+          <div class="flex flex-col md:flex-row md:justify-around items-center space-y-8 md:space-y-0 md:space-x-6">
+              <!-- Card 1 -->
+              <div class="bg-white w-full bg-opacity-20 hover:bg-opacity-30 transition duration-300 rounded-lg p-8 md:w-1/3 shadow-lg hover:shadow-2xl">
+                  <h3 class="text-4xl font-bold text-white">500+</h3>
+                  <p class="text-lg text-gray-300 mt-2">Students Enrolled</p>
+              </div>
+              <!-- Card 2 -->
+              <div class="bg-white w-full bg-opacity-20 hover:bg-opacity-30 transition duration-300 rounded-lg p-8 md:w-1/3 shadow-lg hover:shadow-2xl">
+                  <h3 class="text-4xl font-bold text-white">300+</h3>
+                  <p class="text-lg text-gray-300 mt-2">Hours of Teaching</p>
+              </div>
+              <!-- Card 3 -->
+              <div class="bg-white w-full bg-opacity-20 hover:bg-opacity-30 transition duration-300 rounded-lg p-8 md:w-1/3 shadow-lg hover:shadow-2xl">
+                  <h3 class="text-4xl font-bold text-white">150+</h3>
+                  <p class="text-lg text-gray-300 mt-2">Success Stories</p>
+              </div>
+          </div>
+      </div>
+    </section>
+    
+    <!-- Courses Section -->
+    <section id="courses" class="bg-transparent text-white py-16 px-4">
+        <div class="container mx-auto text-center">
+          <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">Most Popular</h6>
+          <h2 class="text-4xl md:text-6xl font-bold mb-5">Featured Courses
+          </h2>
+            <p class="text-center mb-20">Master Linux, AWS, and DevOps with our top-rated courses or unlock a world of knowledge with our All Access program.
+
+            </p>
+      
+            <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+             
+               
+              <a href="javascript:void(0)" class="block border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-md shadow-sm rounded-lg overflow-hidden">
+                    <!-- Image Section -->
+                    <div class="relative h-64 md:h-72 lg:h-80">
+                        <img src="./assets/images/linux-course.jpg" alt="Linux Administration Course" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Content Section -->
+                    <div class="p-6">
+                        <h6 class="mb-4 text-2xl font-bold text-white">
+                            Linux Administration MasterClass
+                        </h6>
+                        <p class="text-gray-300 leading-relaxed text-base md:text-lg">
+                            The most comprehensive course to master Linux system administration!
+                        </p>
+                        <!-- Button Section -->
+                        <div class="flex flex-col md:flex-row gap-4 justify-center mt-6">
+                            <button class="inline-block bg-red-500 hover:bg-red-600 text-white text-lg font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out">
+                                Learn More
+                            </button>
+                            <button class="border border-white text-white px-6 py-3 rounded-md hover:bg-white hover:text-red-700 transition-colors duration-300 ease-in-out">
+                                Purchase
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:void(0)" class="block border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out">
+              <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-md shadow-sm rounded-lg overflow-hidden">
+                  <!-- Image Section -->
+                  <div class="relative h-64 md:h-72 lg:h-80">
+                      <img src="./assets/images/aws-course.jpg" alt="AWS Certification Course" class="w-full h-full object-cover">
+                  </div>
+                  <!-- Content Section -->
+                  <div class="p-6">
+                      <h6 class="mb-4 text-2xl font-bold text-white">
+                        AWS Solutions Architect
+                      </h6>
+                      <p class="text-gray-300 leading-relaxed text-base md:text-lg">
+                        Become a certified AWS Solutions Architect with our all-inclusive program!
+                      </p>
+                      <!-- Button Section -->
+                      <div class="flex flex-col md:flex-row gap-4 justify-center mt-6">
+                          <button class="inline-block bg-red-500 hover:bg-red-600 text-white text-lg font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out">
+                              Learn More
+                          </button>
+                          <button href="https://wa.me/919226883054?text=I%20am%20interested%20in%20your%20AWS%20Solutions%20Architect%20course%20and%20would%20like%20more%20information."
+                            class="border border-white text-white px-6 py-3 rounded-md hover:bg-white hover:text-red-700 transition-colors duration-300 ease-in-out">
+                              Purchase
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="whyNocode" class="text-white py-16 px-4">
+      <div class="container mx-auto text-center">
+        <!-- Section Header -->
+        <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">The NoCode Advantage</h6>
+        <h2 class="text-4xl md:text-6xl font-bold mb-6">Why Learn With Us?</h2>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto mb-12">
+          Discover 3 compelling reasons to elevate your cloud computing career with NoCode Academy and unlock your full potential.
+        </p>
+    
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <!-- Feature 1 -->
+          <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-md rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <div class="mb-4">
+              <svg class="w-12 h-12 mx-auto text-red-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2">Learn at Your Own Pace</h3>
+            <p class="text-gray-200">
+              Access courses anytime, anywhere. Tailor your learning experience to fit your schedule.
+            </p>
+          </div>
+    
+          <!-- Feature 2 -->
+          <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-md rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <div class="mb-4">
+              <svg class="w-12 h-12 mx-auto text-red-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2">Expert Instructors</h3>
+            <p class="text-gray-200">
+              Learn from industry professionals with years of experience in Linux, AWS, and DevOps.
+            </p>
+          </div>
+    
+          <!-- Feature 3 -->
+          <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-md rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <div class="mb-4">
+              <svg class="w-12 h-12 mx-auto text-red-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h6v6m2 5H7a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v14a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2">Comprehensive Curriculum</h3>
+            <p class="text-gray-200">
+              From foundational principles to advanced techniques, our course cover everything you need to succeed in cloud computing.
+            </p>
+          </div>
+        </div>
+    
+        <!-- Call to Action -->
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+          <a href="./course.html" class="inline-block bg-red-500 hover:bg-red-600 text-white text-lg font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out">
+            Get Started
+          </a>
+          <a href="https://wa.me/919226883054?text=I%20am%20interested%20in%20your%20cloud%20courses%20and%20would%20like%20more%20information."
+             class="bg-transparent border border-white text-white font-semibold py-3 px-6 rounded-md hover:bg-white hover:text-red-600 transition-colors duration-300">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Testimonials Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-16 px-4 text-white bg-gray-900">
+  <div class="container mx-auto text-center">
+    <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">The NoCode Pride</h6>
+    <h2 class="text-4xl md:text-6xl font-bold mb-6">Our Students Say?</h2>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-12">
+      Discover what our students say about their experience at NoCode Academy.
+    </p>
+
+    <!-- Carousel Wrapper -->
+    <div class="bg-neutral-950 p-4 rounded-lg">
+      <section class="max-w-5xl mx-auto w-full px-4 py-10">
+        <div class="flex items-center justify-center flex-col gap-y-2 py-5">
+
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 w-full">
+            <!-- Review 1 -->
+            <div class="border w-full p-7 rounded-xl bg-neutral-900 drop-shadow-md border-neutral-800/50 
+                        col-span-1 lg:col-span-2 flex flex-col gap-y-10 justify-between">
+              <div class="flex flex-col gap-y-3.5">
+                <p class="font-bold text-xl text-white">Transformative Learning Experience</p>
+                <p class="font-medium text-white">The Linux course transformed my system administration skills and boosted my confidence. The hands-on labs were incredibly helpful.</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <div class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center">
+                  <span class="text-white font-bold">👤</span>
+                </div>
+                <div class="flex flex-col items-start">
+                  <p class="pt-2 text-sm font-semibold text-white">Anita Sharma</p>
+                  <p class="text-sm font-medium text-slate-100/70">System Administrator from Delhi</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="border w-full p-7 rounded-xl bg-neutral-900 drop-shadow-md border-neutral-800/50 
+                        col-span-1 lg:col-span-3 flex flex-col gap-y-10 justify-between">
+              <div class="flex flex-col gap-y-3.5">
+                <p class="font-bold text-xl text-white">Comprehensive Curriculum</p>
+                <p class="font-medium text-white">The AWS course offered a comprehensive curriculum that covered all aspects of cloud architecture. Highly recommend!</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <div class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center">
+                  <span class="text-white font-bold">👤</span>
+                </div>
+                <div class="flex flex-col items-start">
+                  <p class="pt-2 text-sm font-semibold text-white">Rajesh Patel</p>
+                  <p class="text-sm font-medium text-slate-100/70">Cloud Architect from Gujarat</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="border w-full p-7 rounded-xl bg-neutral-900 drop-shadow-md border-neutral-800/50 
+                        col-span-1 lg:col-span-3 flex flex-col gap-y-10 justify-between">
+              <div class="flex flex-col gap-y-3.5">
+                <p class="font-bold text-xl text-white">Practical Approach</p>
+                <p class="font-medium text-white">The DevOps training helped me implement CI/CD pipelines effectively. A great investment for my career!</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <div class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center">
+                  <span class="text-white font-bold">👤</span>
+                </div>
+                <div class="flex flex-col items-start">
+                  <p class="pt-2 text-sm font-semibold text-white">Meera Iyer</p>
+                  <p class="text-sm font-medium text-slate-100/70">DevOps Engineer from Tamil Nadu</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="border w-full p-7 rounded-xl bg-neutral-900 drop-shadow-md border-neutral-800/50 
+                        col-span-1 lg:col-span-2 flex flex-col gap-y-10 justify-between">
+              <div class="flex flex-col gap-y-3.5">
+                <p class="font-bold text-xl text-white">Excellent Faculty</p>
+                <p class="font-medium text-white">The instructors were incredibly knowledgeable and supportive. They made learning cloud technologies enjoyable and engaging.</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <div class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center">
+                  <span class="text-white font-bold">👤</span>
+                </div>
+                <div class="flex flex-col items-start">
+                  <p class="pt-2 text-sm font-semibold text-white">Vikram Joshi</p>
+                  <p class="text-sm font-medium text-slate-100/70">Cloud Engineer from Maharashtra</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="border w-full p-7 rounded-xl bg-neutral-900 drop-shadow-md border-neutral-800/50 
+                        col-span-1 lg:col-span-2 flex flex-col gap-y-10 justify-between">
+              <div class="flex flex-col gap-y-3.5">
+                <p class="font-bold text-xl text-white">Valuable Networking</p>
+                <p class="font-medium text-white">I made valuable connections with fellow students and industry professionals during this course.</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <div class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center">
+                  <span class="text-white font-bold">👤</span>
+                </div>
+                <div class="flex flex-col items-start">
+                  <p class="pt-2 text-sm font-semibold text-white">Arjun Mehta</p>
+                  <p class="text-sm font-medium text-slate-100/70">Cloud Developer from Rajasthan</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="border w-full p-7 rounded-xl bg-neutral-900 drop-shadow-md border-neutral-800/50 
+                        col-span-1 lg:col-span-3 flex flex-col gap-y-10 justify-between">
+              <div class="flex flex-col gap-y-3.5">
+                <p class="font-bold text-xl text-white">User-Centric Design Focus</p>
+                <p class="font-medium text-white">This course taught me the importance of user-centric design in cloud solutions, which is now at the core of my projects.</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <div class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center">
+                  <span class="text-white font-bold">👤</span>
+                </div>
+                <div class="flex flex-col items-start">
+                  <p class="pt-2 text-sm font-semibold text-white">Sneha Gupta</p>
+                  <p class="text-sm font-medium text-slate-100/70">Cloud Solutions Architect from West Bengal</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 7 -->
+            <div class="border w-full p-7 rounded-xl bg-neutral-900 drop-shadow-md border-neutral-800/50 
+                        col-span-1 lg:col-span-3 flex flex-col gap-y-10 justify-between">
+              <div class="flex flex-col gap-y-3.5">
+                <p class="font-bold text-xl text-white">Hands-On Projects</p>
+                <p class="font-medium text-white">The hands-on projects allowed me to apply my knowledge effectively, making me job-ready in cloud computing!</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <div class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center">
+                  <span class="text-white font-bold">👤</span>
+                </div>
+                <div class="flex flex-col items-start">
+                  <p class="pt-2 text-sm font-semibold text-white">Pooja Reddy</p>
+                  <p class="text-sm font-medium text-slate-100/70">Cloud Developer from Karnataka</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 8 -->
+            <div class="border w-full p-7 rounded-xl bg-neutral-900 drop-shadow-md border-neutral-800/50 
+                        col-span-1 lg:col-span-2 flex flex-col gap-y-10 justify-between">
+              <div class="flex flex-col gap-y-3.5">
+                <p class="font-bold text-xl text-white">Engaging Community</p>
+                <p class="font-medium text-white">The community of learners was engaging and supportive. I felt encouraged throughout the course.</p>
+              </div>
+              <div class="flex gap-2 items-center">
+                <div class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center">
+                  <span class="text-white font-bold">👤</span>
+                </div>
+                <div class="flex flex-col items-start">
+                  <p class="pt-2 text-sm font-semibold text-white">Nisha Desai</p>
+                  <p class="text-sm font-medium text-slate-100/70">Cloud Engineer from Gujarat</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 py-16 px-4 text-white">
+      <div class="container mx-auto text-center">
+        <!-- Section Title -->
+        <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">Contact Us</h6>
+        <h2 class="text-4xl md:text-6xl font-bold mb-6">Still Have Questions?</h2>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto mb-12">
+          Ask your questions and get a satisfying response from us.
+        </p>
+    
+        <!-- Card Design -->
+        <div class="max-w-2xl mx-auto p-6 bg-gray-900 rounded-lg border border-gray-400 shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Still have questions?</h3>
+          <p class="text-lg mb-6">
+            Can’t find the answer you’re looking for? Not sure which course is right for you? 
+            Please chat with our friendly team.
+          </p>
+          <a href="https://wa.me/919226883054?text=I%20am%20interested%20in%20your%20cloud%20courses%20and%20would%20like%20more%20information."
+             class="inline-block bg-red-500 hover:bg-red-600 text-white text-lg font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out">
+             Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-transparent py-4 text-white text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2024 NoCode Academy. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="#" class="mx-2 text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="#" class="mx-2 text-gray-400 hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script> 
+    <script src="js/main.js"></script>
+    <script>
+      // Countdown Timer
+      const targetDate = new Date("October 5, 2024 12:00:00").getTime();
+
+      // Update the countdown every second
+      const countdownInterval = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        // Time calculations
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        // If the countdown is over
+        if (distance < 0) {
+          clearInterval(countdownInterval);
+          document.getElementById("countdown").innerHTML = "Expired";
+        }
+      }, 1000);
+
+
+
+      // JavaScript to toggle mobile menu visibility
+      document.addEventListener('DOMContentLoaded', function () {
+          const menuButton = document.getElementById('menu-button');
+          const mobileMenu = document.getElementById('mobile-menu');
+          const menuIcon = document.getElementById('menu-icon');
+
+          // Toggle menu visibility on button click
+          menuButton.addEventListener('click', function () {
+              mobileMenu.classList.toggle('hidden'); // Toggle the hidden class
+
+              // Toggle between "menu" and "close" icon
+              if (menuIcon.textContent.trim() === 'menu') {
+                  menuIcon.textContent = 'close';
+              } else {
+                  menuIcon.textContent = 'menu';
+              }
+          });
+      });
+
+    </script>
+
+</body>
+</html>
