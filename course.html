@@ -22,8 +22,8 @@
     <div class="bg-white w-screen h-12 fixed z-20 flex justify-center items-center overflow-hidden">
       <div class="flex justify-between gap-1 md:gap-10 items-center container mx-auto px-1 md:px-4">
           <div class="bg-black text-white rounded-lg px-1 md:px-2 py-0 md:py-1 hidden md:block">New</div>
-          <p class="font-bold text-sm md:text-lg">Cloud Computing Masterclass</p>
-          <a href="#" class="hidden md:block underline text-sm text-blue-600">30% off + 2x mentoring</a>
+          <p class="font-bold text-sm md:text-lg text-black">Cloud Computing Masterclass</p>
+          <a href="#" class="hidden md:block underline text-sm text-red-600">30% off + 2x mentoring</a>
           <div id="countdown" class="bg-black text-white rounded-lg px-1 py-0 md:px-2 md:py-1 flex items-center space-x-2">
               <span class="clock-icon hidden md:block">⏰</span>
               <span id="days" class="md:mr-1">0</span><span class="mr-1">Days</span>
@@ -128,381 +128,1016 @@
     </section>
     
     <!-- Course Curriculum Section -->
-    <section class="py-16 px-4">
+    <section class="py-16 px-4 bg-gray-900">
       <div class="container mx-auto text-center">
         <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">In-Depth Curriculum</h6>
-        <h2 class="text-4xl md:text-6xl font-bold mb-5">Course Curriculum</h2>
-        <p class="text-center mb-20 text-gray-200">
+        <h2 class="text-4xl md:text-6xl font-bold mb-5 text-white">Course Curriculum</h2>
+        <p class="text-center mb-20 text-gray-400 max-w-2xl mx-auto">
           Our structured curriculum takes you from cloud fundamentals to advanced deployment and automation strategies, ensuring a comprehensive learning experience.
         </p>
         
         <!-- Tabs for Overview, Curriculum, Instructor, Reviews, FAQ, Pricing -->
         <div class="mb-12 flex justify-center space-x-4 flex-wrap">
-          <a href="#overview" class="text-lg font-semibold text-gray-500 hover:text-red-500">Overview</a>
+          <a href="#overview" class="text-lg font-semibold text-gray-500 hover:text-red-500 transition-colors">Overview</a>
           <a href="#curriculum" class="text-lg font-semibold text-red-500 border-b-2 border-red-500 pb-1">Curriculum</a>
-          <a href="#instructor" class="text-lg font-semibold text-gray-500 hover:text-red-500">Instructor</a>
-          <a href="#reviews" class="text-lg font-semibold text-gray-500 hover:text-red-500">Reviews</a>
-          <a href="#faq" class="text-lg font-semibold text-gray-500 hover:text-red-500">FAQ</a>
-          <a href="#pricing" class="text-lg font-semibold text-gray-500 hover:text-red-500">Pricing</a>
+          
+          <a href="#certifications" class="text-lg font-semibold text-gray-500 hover:text-red-500 transition-colors">Certifications You Can Get</a>
+          <a href="#jobs" class="text-lg font-semibold text-gray-500 hover:text-red-500 transition-colors">Jobs You Can Apply</a>
+          <a href="#instructor" class="text-lg font-semibold text-gray-500 hover:text-red-500 transition-colors">Instructor</a>
+          <a href="#reviews" class="text-lg font-semibold text-gray-500 hover:text-red-500 transition-colors">Reviews</a>
+          <a href="#faq" class="text-lg font-semibold text-gray-500 hover:text-red-500 transition-colors">FAQ</a>
+          <a href="#pricing" class="text-lg font-semibold text-gray-500 hover:text-red-500 transition-colors">Pricing</a>
         </div>
     
         <!-- Curriculum Content -->
         <div class="space-y-12">
           
-          <!-- Month 1: Cloud Fundamentals -->
-          <div class="border shadow-md rounded-lg overflow-hidden">
-            <div class="border-b px-6 py-4 bg-red-500">
-              <h4 class="text-xl font-semibold text-white">Month 1: Cloud Fundamentals (24 hours)</h4>
-            </div>
-            <div class="p-6">
-              <!-- Accordion for Weeks -->
-              <div class="space-y-4">
-                
-                <!-- Week 1 -->
-                <div class="border rounded-lg">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
-                    <h5 class="text-lg font-semibold text-gray-200">Week 1: Introduction to Cloud Computing & Linux Fundamentals (6 hours)</h5>
-                  </button>
-                  <div class="px-4 py-2 hidden">
-                    <ul class="list-disc list-inside space-y-2 text-white">
-                      <li><strong>Day 1:</strong> Cloud Computing Basics & Linux Introduction (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Overview of cloud computing principles and architecture.</li>
-                          <li>Introduction to Linux operating system and basic commands.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 2:</strong> Linux System Administration (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Manage users, permissions, and system processes in Linux.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 3:</strong> Linux Networking & Security (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Configure networking settings and implement security best practices in Linux.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-    
-                <!-- Week 2 -->
-                <div class="border rounded-lg">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
-                    <h5 class="text-lg font-semibold text-gray-200">Week 2: AWS Fundamentals & Services (6 hours)</h5>
-                  </button>
-                  <div class="px-4 py-2 hidden">
-                    <ul class="list-disc list-inside space-y-2 text-white">
-                      <li><strong>Day 1:</strong> AWS Introduction & Core Services (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Introduction to AWS and its core services like EC2, S3, and RDS.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 2:</strong> AWS Networking & Security (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Configure VPCs, security groups, and IAM roles in AWS.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 3:</strong> AWS Storage Solutions (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Explore various AWS storage options and their use cases.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-    
-                <!-- Week 3 -->
-                <div class="border rounded-lg">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
-                    <h5 class="text-lg font-semibold text-gray-200">Week 3: DevOps Principles & Tools (6 hours)</h5>
-                  </button>
-                  <div class="px-4 py-2 hidden">
-                    <ul class="list-disc list-inside space-y-2 text-white">
-                      <li><strong>Day 1:</strong> Introduction to DevOps & CI/CD Pipelines (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Understand DevOps culture and implement Continuous Integration/Continuous Deployment pipelines.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 2:</strong> Automation with Ansible & Jenkins (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Automate infrastructure provisioning and deployment processes using Ansible and Jenkins.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 3:</strong> Containerization with Docker & Kubernetes (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Learn containerization concepts and manage containers with Docker and Kubernetes.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-    
-                <!-- Week 4 -->
-                <div class="border rounded-lg">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
-                    <h5 class="text-lg font-semibold text-gray-200">Week 4: Advanced AWS Services & Best Practices (6 hours)</h5>
-                  </button>
-                  <div class="px-4 py-2 hidden">
-                    <ul class="list-disc list-inside space-y-2 text-white">
-                      <li><strong>Day 1:</strong> AWS Lambda & Serverless Architecture (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Implement serverless applications using AWS Lambda.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 2:</strong> AWS Monitoring & Optimization (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Monitor AWS resources and optimize performance and costs.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 3:</strong> AWS Security Best Practices (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Enhance security measures and implement best practices in AWS environments.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-    
-              </div>
-            </div>
-          </div>
-    
-          <!-- Month 2: Infrastructure as Code & Automation -->
-          <div class="border shadow-md rounded-lg overflow-hidden">
-            <div class="border-b px-6 py-4 bg-red-500">
-              <h4 class="text-xl font-semibold text-white">Month 2: Infrastructure as Code & Automation (24 hours)</h4>
-            </div>
-            <div class="p-6">
-              <!-- Accordion for Weeks -->
-              <div class="space-y-4">
-                
-                <!-- Week 5 -->
-                <div class="border rounded-lg">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
-                    <h5 class="text-lg font-semibold text-gray-200">Week 5: Terraform for Infrastructure Management (6 hours)</h5>
-                  </button>
-                  <div class="px-4 py-2 hidden">
-                    <ul class="list-disc list-inside space-y-2 text-white">
-                      <li><strong>Day 1:</strong> Introduction to Terraform (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Understand the basics of Infrastructure as Code with Terraform.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 2:</strong> Writing Terraform Configurations (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Create and manage infrastructure using Terraform scripts.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 3:</strong> Terraform Modules & Best Practices (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Organize Terraform configurations using modules and follow best practices.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-    
-                <!-- Week 6 -->
-                <div class="border rounded-lg">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
-                    <h5 class="text-lg font-semibold text-gray-200">Week 6: Ansible for Configuration Management (6 hours)</h5>
-                  </button>
-                  <div class="px-4 py-2 hidden">
-                    <ul class="list-disc list-inside space-y-2 text-white">
-                      <li><strong>Day 1:</strong> Introduction to Ansible (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Learn the fundamentals of Ansible for automating IT tasks.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 2:</strong> Writing Ansible Playbooks (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Create playbooks to automate configuration and deployment tasks.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 3:</strong> Ansible Roles & Best Practices (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Organize Ansible configurations using roles and follow best practices.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-    
-                <!-- Week 7 -->
-                <div class="border rounded-lg">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
-                    <h5 class="text-lg font-semibold text-gray-200">Week 7: Jenkins for Continuous Integration (6 hours)</h5>
-                  </button>
-                  <div class="px-4 py-2 hidden">
-                    <ul class="list-disc list-inside space-y-2 text-white">
-                      <li><strong>Day 1:</strong> Setting Up Jenkins (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Install and configure Jenkins for CI/CD pipelines.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 2:</strong> Creating Jenkins Pipelines (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Develop pipelines to automate build, test, and deployment processes.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 3:</strong> Integrating Jenkins with Git & AWS (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Integrate Jenkins with Git repositories and deploy applications to AWS.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-    
-                <!-- Week 8 -->
-                <div class="border rounded-lg">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
-                    <h5 class="text-lg font-semibold text-gray-200">Week 8: Kubernetes for Container Orchestration (6 hours)</h5>
-                  </button>
-                  <div class="px-4 py-2 hidden">
-                    <ul class="list-disc list-inside space-y-2 text-white">
-                      <li><strong>Day 1:</strong> Introduction to Kubernetes (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Understand the basics of Kubernetes and its architecture.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 2:</strong> Deploying Applications on Kubernetes (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Learn how to deploy and manage containerized applications using Kubernetes.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 3:</strong> Kubernetes Networking & Security (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Configure networking and implement security measures in Kubernetes clusters.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-    
-              </div>
-            </div>
-          </div>
-    
-          <!-- Month 3: Advanced DevOps Practices -->
-          <div class="border shadow-md rounded-lg overflow-hidden">
-            <div class="border-b px-6 py-4 bg-red-500">
-              <h4 class="text-xl font-semibold text-white">Month 3: Advanced DevOps Practices (24 hours)</h4>
-            </div>
-            <div class="p-6">
-              <!-- Accordion for Weeks -->
-              <div class="space-y-4">
-                
-                <!-- Week 9 -->
-                <div class="border rounded-lg">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
-                    <h5 class="text-lg font-semibold text-gray-200">Week 9: Advanced CI/CD Pipelines (6 hours)</h5>
-                  </button>
-                  <div class="px-4 py-2 hidden">
-                    <ul class="list-disc list-inside space-y-2 text-white">
-                      <li><strong>Day 1:</strong> Multi-Stage Pipelines (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Design and implement multi-stage CI/CD pipelines for complex applications.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 2:</strong> Pipeline Optimization & Caching (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Optimize pipelines for faster builds and efficient resource usage.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 3:</strong> Integrating Automated Testing (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Incorporate automated testing into CI/CD pipelines to ensure code quality.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-    
-                <!-- Week 10 -->
-                <div class="border rounded-lg">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
-                    <h5 class="text-lg font-semibold text-gray-200">Week 10: Monitoring & Logging with Prometheus & Grafana (6 hours)</h5>
-                  </button>
-                  <div class="px-4 py-2 hidden">
-                    <ul class="list-disc list-inside space-y-2 text-white">
-                      <li><strong>Day 1:</strong> Setting Up Prometheus (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Install and configure Prometheus for monitoring applications and infrastructure.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 2:</strong> Creating Dashboards with Grafana (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Design and build informative dashboards using Grafana to visualize metrics.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 3:</strong> Alerting & Incident Management (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Implement alerting rules and manage incidents effectively.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-    
-                <!-- Week 11 -->
-                <div class="border rounded-lg">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
-                    <h5 class="text-lg font-semibold text-gray-200">Week 11: Security in DevOps (6 hours)</h5>
-                  </button>
-                  <div class="px-4 py-2 hidden">
-                    <ul class="list-disc list-inside space-y-2 text-white">
-                      <li><strong>Day 1:</strong> DevSecOps Principles (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Integrate security practices into the DevOps workflow.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 2:</strong> Implementing Security Automation (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Automate security checks and vulnerability assessments within pipelines.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 3:</strong> Compliance & Governance (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Ensure compliance with industry standards and implement governance policies.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-    
-                <!-- Week 12 -->
-                <div class="border rounded-lg">
-                  <button class="w-full text-left px-4 py-3 hover:bg-gray-800 focus:outline-none focus:bg-gray-700 rounded overflow-hidden">
-                    <h5 class="text-lg font-semibold text-gray-200">Week 12: Infrastructure Monitoring & Optimization (6 hours)</h5>
-                  </button>
-                  <div class="px-4 py-2 hidden">
-                    <ul class="list-disc list-inside space-y-2 text-white">
-                      <li><strong>Day 1:</strong> Advanced Monitoring Techniques (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Implement advanced monitoring strategies for large-scale infrastructures.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 2:</strong> Performance Optimization (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Optimize system performance and resource utilization.</li>
-                        </ul>
-                      </li>
-                      <li><strong>Day 3:</strong> Cost Management in AWS (2 hours)
-                        <ul class="list-disc list-inside ml-5">
-                          <li>Manage and optimize AWS costs effectively.</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-    
-              </div>
-            </div>
-          </div>
-    
+   
+          <!-- Section: Linux -->
+<div class="border border-red-500 shadow-lg rounded-lg overflow-hidden bg-gray-800">
+  <div class="border-b px-6 py-4 bg-red-500">
+    <h4 class="text-2xl font-semibold text-white">Section 1: Linux</h4>
+  </div>
+  <div class="p-6">
+    <!-- Accordion for Modules -->
+    <div class="space-y-4">
+      
+      <!-- Module 1: Introduction to Linux -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 1: Introduction to Linux</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Overview of Linux operating system</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">History and evolution</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Linux distributions</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Basic command-line interface</li>
+          </ul>
         </div>
-      </section>
+      </div>
+      
+      <!-- Module 2: Download, Install, and Configure -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 2: Download, Install, and Configure</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Choosing the right distribution</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Installation procedures</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Post-installation configuration</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Package management</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Module 3: System Access and File System -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 3: System Access and File System</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">User and group management</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">File system hierarchy</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Permissions and ownership</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Managing files and directories</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Module 4: Linux Fundamentals -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 4: Linux Fundamentals</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Basic commands and utilities</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Text processing tools</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Shell navigation</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Environment variables</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Module 5: System Administration -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 5: System Administration</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Process management</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Service management</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">System monitoring</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Backup and recovery</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Module 6: Shell Scripting -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 6: Shell Scripting</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Introduction to shell scripting</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Writing and executing scripts</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Automation tasks</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Script debugging</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Module 7: Networking, Services, and System Updates -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 7: Networking, Services, and System Updates</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Network configuration</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Common network services</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Managing system updates</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Firewall and security basics</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Module 8: Disk Management and Run Levels -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 8: Disk Management and Run Levels</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Partitioning and formatting</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Mounting and unmounting file systems</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Managing run levels and services</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Disk usage monitoring</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Module 9: All About Resume -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 9: All About Resume</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Crafting a professional resume</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Highlighting Linux skills</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Resume formatting tips</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Common mistakes to avoid</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Module 10: All About Interview -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 10: All About Interview</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Preparing for Linux-related interviews</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Common interview questions</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Demonstrating practical skills</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Post-interview follow-up</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Course Recap and Linux Future -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Course Recap and Linux Future</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Summary of key concepts</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Emerging trends in Linux</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Career opportunities</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Next steps for continued learning</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Additional Resources -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Additional Resources</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Recommended books and online resources</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Community and support forums</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Practice exercises and labs</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Bonus -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <!-- Module Header -->
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Bonus</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Module Content -->
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Exclusive content and supplementary materials</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Special lectures from industry experts</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+  
+
+
+
+   
+       <!-- Section: Cloud -->
+       <div class="border border-red-500 shadow-lg rounded-lg overflow-hidden bg-gray-800">
+        <div class="border-b px-6 py-4 bg-red-500">
+          <h4 class="text-2xl font-semibold text-white">Section 2: Cloud</h4>
+        </div>
+        <div class="p-6">
+          <!-- Accordion for Cloud Modules -->
+          <div class="space-y-4">
+      
+            <!-- Module 1: Course Introduction -->
+            <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+              <button 
+                class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+                aria-expanded="false"
+              >
+                <h5 class="text-lg font-semibold text-white">Module 1: Course Introduction</h5>
+                <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-6 py-4 bg-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-200">
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Introduction to cloud computing</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Cloud service models (IaaS, PaaS, SaaS)</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Deployment models (Public, Private, Hybrid)</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Module 2: Identity & Federation -->
+            <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+              <button 
+                class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+                aria-expanded="false"
+              >
+                <h5 class="text-lg font-semibold text-white">Module 2: Identity & Federation</h5>
+                <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-6 py-4 bg-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-200">
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Identity and Access Management (IAM)</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Federation concepts</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Single Sign-On (SSO)</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Multi-Factor Authentication (MFA)</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Module 3: Security -->
+            <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+              <button 
+                class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+                aria-expanded="false"
+              >
+                <h5 class="text-lg font-semibold text-white">Module 3: Security</h5>
+                <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-6 py-4 bg-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-200">
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Cloud security fundamentals</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Data protection and encryption</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Security best practices</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Compliance and regulatory standards</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Module 4: Compute & Load Balancing -->
+            <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+              <button 
+                class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+                aria-expanded="false"
+              >
+                <h5 class="text-lg font-semibold text-white">Module 4: Compute & Load Balancing</h5>
+                <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-6 py-4 bg-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-200">
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Virtual machines and instances</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Load balancing strategies</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Auto-scaling techniques</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Serverless computing</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Module 5: Storage -->
+            <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+              <button 
+                class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+                aria-expanded="false"
+              >
+                <h5 class="text-lg font-semibold text-white">Module 5: Storage</h5>
+                <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-6 py-4 bg-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-200">
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Cloud storage options</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Object vs. block storage</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Data lifecycle management</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Backup and disaster recovery</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Module 6: Caching -->
+            <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+              <button 
+                class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+                aria-expanded="false"
+              >
+                <h5 class="text-lg font-semibold text-white">Module 6: Caching</h5>
+                <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-6 py-4 bg-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-200">
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Introduction to caching</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Caching strategies and tools</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Improving application performance</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Cache invalidation techniques</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Module 7: Databases -->
+            <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+              <button 
+                class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+                aria-expanded="false"
+              >
+                <h5 class="text-lg font-semibold text-white">Module 7: Databases</h5>
+                <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-6 py-4 bg-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-200">
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Cloud database services</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">SQL vs. NoSQL databases</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Database scalability</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Database migration strategies</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Module 8: Networking -->
+            <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+              <button 
+                class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+                aria-expanded="false"
+              >
+                <h5 class="text-lg font-semibold text-white">Module 8: Networking</h5>
+                <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-6 py-4 bg-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-200">
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Cloud networking concepts</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Virtual Private Cloud (VPC)</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Load balancing and routing</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Network security groups</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Module 9: Serverless -->
+            <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+              <button 
+                class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+                aria-expanded="false"
+              >
+                <h5 class="text-lg font-semibold text-white">Module 9: Serverless</h5>
+                <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-6 py-4 bg-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-200">
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Introduction to serverless architecture</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Serverless functions and APIs</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Event-driven computing</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Cost optimization with serverless</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Module 10: DevOps in Cloud -->
+            <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+              <button 
+                class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+                aria-expanded="false"
+              >
+                <h5 class="text-lg font-semibold text-white">Module 10: DevOps in Cloud</h5>
+                <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-6 py-4 bg-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-200">
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">DevOps principles and practices</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">CI/CD in the cloud</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Infrastructure as Code (IaC)</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Monitoring and logging</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Module 11: Cloud Certification -->
+            <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+              <button 
+                class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+                aria-expanded="false"
+              >
+                <h5 class="text-lg font-semibold text-white">Module 11: Cloud Certification</h5>
+                <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-6 py-4 bg-gray-700">
+                <ul class="list-disc list-inside space-y-2 text-gray-200">
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Overview of cloud certifications</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Preparation strategies and resources</li>
+                   <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Practice exams and study groups</li>
+                </ul>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      <!-- End Section: Cloud -->
+
+
+
+
+          
+       <!-- Section: Devops -->
+<div class="border border-red-500 shadow-lg rounded-lg overflow-hidden bg-gray-800">
+  <div class="border-b px-6 py-4 bg-red-500">
+    <h4 class="text-2xl font-semibold text-white">Section 3: DevOps</h4>
+  </div>
+  <div class="p-6">
+    <!-- Accordion for Cloud Modules -->
+    <div class="space-y-4">
+
+      <!-- Module 1: Course Introduction -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 1: Introduction to DevOps</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Understanding DevOps Principles</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Overview of CI/CD Pipelines</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">The Role of Automation in DevOps</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Module 2: Version Control and Collaboration -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 2: Version Control and Collaboration</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Git Basics</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Branching and Merging Strategies</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Collaborative Workflows with GitHub</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Code Review Best Practices</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Module 3: Core Java for Test Automation -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 3: Core Java for Test Automation</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Core Java Basics</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Object-Oriented Programming Concepts</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none "> Exception Handling in Java</li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- Module 4: Selenium WebDriver Essentials -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 4: Selenium WebDriver Essentials</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Introduction to Selenium</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Browser Automation Techniques</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Locating Web Elements</li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- Module 5: TestNG Framework -->
+      <div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+        <button 
+          class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+          aria-expanded="false"
+        >
+          <h5 class="text-lg font-semibold text-white">Module 5: TestNG Framework</h5>
+          <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="hidden px-6 py-4 bg-gray-700">
+          <ul class="list-disc list-inside space-y-2 text-gray-200">
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none "> TestNG Setup and Configuration</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none "> Writing Test Cases in TestNG</li>
+             <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none "> Organizing Test Suites and Parallel Testing</li>
+
+          </ul>
+        </div>
+      </div>
+
+ <!-- Module 6: Advanced Test Automation Frameworks -->
+<div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+  <button 
+    class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+    aria-expanded="false"
+  >
+    <h5 class="text-lg font-semibold text-white">Module 6: Advanced Test Automation Frameworks</h5>
+    <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div class="hidden px-6 py-4 bg-gray-700">
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none "> Framework Development with Selenium, Java, and Cucumber</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none "> Behavior Driven Development (BDD) with Cucumber</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none "> Developing Reusable Test Frameworks</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Module 7: Jenkins Basics -->
+<div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+  <button 
+    class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+    aria-expanded="false"
+  >
+    <h5 class="text-lg font-semibold text-white">Module 7: Jenkins Basics</h5>
+    <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div class="hidden px-6 py-4 bg-gray-700">
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Jenkins Fundamentals</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Installing Jenkins on Various Platforms</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Configuring Jenkins for Optimal Performance</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Module 8: CI/CD Pipelines with Jenkins -->
+<div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+  <button 
+    class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+    aria-expanded="false"
+  >
+    <h5 class="text-lg font-semibold text-white">Module 8: CI/CD Pipelines with Jenkins</h5>
+    <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div class="hidden px-6 py-4 bg-gray-700">
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Creating Your First Jenkins Job</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Build Triggers and Automated Builds</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Deploying Artifacts to Tomcat Server - Manual Approach</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Deploying WAR Files to Tomcat Server Using Jenkins</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Module 9: Advanced Jenkins Features -->
+<div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+  <button 
+    class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+    aria-expanded="false"
+  >
+    <h5 class="text-lg font-semibold text-white">Module 9: Advanced Jenkins Features</h5>
+    <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div class="hidden px-6 py-4 bg-gray-700">
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Declarative Pipeline Syntax</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Managing User Accounts and Permissions</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Integrating GitHub with Jenkins Projects</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Using Environment Variables in Jenkins Jobs</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Understanding Continuous Delivery vs. Continuous Deployment</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Module 10: Docker Fundamentals -->
+<div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+  <button 
+    class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+    aria-expanded="false"
+  >
+    <h5 class="text-lg font-semibold text-white">Module 10: Docker Fundamentals</h5>
+    <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div class="hidden px-6 py-4 bg-gray-700">
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Introduction to Docker and Containerization</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Docker Architecture and Components</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Basic Docker Commands and Usage</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Managing Docker Volumes and Storage</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Module 11: Advanced Docker Concepts -->
+<div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+  <button 
+    class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+    aria-expanded="false"
+  >
+    <h5 class="text-lg font-semibold text-white">Module 11: Advanced Docker Concepts</h5>
+    <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div class="hidden px-6 py-4 bg-gray-700">
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Creating Docker Images and Dockerfiles</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Docker Compose for Multi-Container Applications</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Docker Networking and Communication</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Best Practices for Dockerfile Creation</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Module 12: Kubernetes Basics -->
+<div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+  <button 
+    class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+    aria-expanded="false"
+  >
+    <h5 class="text-lg font-semibold text-white">Module 12: Kubernetes Basics</h5>
+    <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div class="hidden px-6 py-4 bg-gray-700">
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Understanding Kubernetes Architecture</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Setting Up Your First Kubernetes Cluster</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Deploying Applications in Kubernetes</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Module 13: Advanced Kubernetes Concepts -->
+<div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+  <button 
+    class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+    aria-expanded="false"
+  >
+    <h5 class="text-lg font-semibold text-white">Module 13: Advanced Kubernetes Concepts</h5>
+    <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div class="hidden px-6 py-4 bg-gray-700">
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Configuring Persistent Storage in Kubernetes</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Using Helm for Application Management</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Monitoring and Logging in Kubernetes</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Module 14: CI/CD Fundamentals -->
+<div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+  <button 
+    class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+    aria-expanded="false"
+  >
+    <h5 class="text-lg font-semibold text-white">Module 14: CI/CD Fundamentals</h5>
+    <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div class="hidden px-6 py-4 bg-gray-700">
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Understanding CI/CD Concepts</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Setting Up a CI/CD Pipeline with GitHub Actions</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Automating Testing and Deployment</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Module 15: Cloud Computing Essentials -->
+<div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+  <button 
+    class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+    aria-expanded="false"
+  >
+    <h5 class="text-lg font-semibold text-white">Module 15: Cloud Computing Essentials</h5>
+    <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div class="hidden px-6 py-4 bg-gray-700">
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Introduction to Cloud Service Models</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Deploying Applications on AWS</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Understanding Cloud Security Best Practices</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Module 16: Monitoring and Logging -->
+<div class="border rounded-lg bg-gray-800 shadow-lg overflow-hidden">
+  <button 
+    class="accordion-button w-full text-left px-6 py-4 flex justify-between items-center bg-red-500 hover:bg-red-600 focus:outline-none transition-colors"
+    aria-expanded="false"
+  >
+    <h5 class="text-lg font-semibold text-white">Module 16: Monitoring and Logging</h5>
+    <svg class="w-6 h-6 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+  <div class="hidden px-6 py-4 bg-gray-700">
+    <ul class="list-disc list-inside space-y-2 text-gray-200">
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Setting Up Monitoring Tools (Prometheus, Grafana)</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Centralized Logging Solutions</li>
+       <li class="p-5 flex rounded cursor-pointer hover:bg-red-500 hover:color-white w-full list-none ">Analyzing Logs for Performance Insights</li>
+    </ul>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+<!-- End Section: DevOps -->
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+<section id="certifications" class="py-16 px-4 bg-gray-800">
+  <div class="container mx-auto text-center">
+    <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">What You Can Achieve</h6>
+    <h2 class="text-4xl md:text-6xl font-bold mb-5">Certifications</h2>
+    <p class="text-center mb-20 text-gray-200">
+      By completing this course, you will acquire the essential skills and knowledge to confidently pursue and excel in industry-recognized certifications. These credentials will significantly enhance your professional profile and open doors to exciting career opportunities in the tech industry.
+    </p>
+
+    <div class="flex justify-center space-x-6 flex-wrap">
+      <div class="bg-gray-800 border border-red-500 rounded-lg shadow-lg p-6 m-4 w-80">
+        <h3 class="text-2xl font-semibold text-white mb-2">RHCSA</h3>
+        <p class="text-gray-300">Red Hat Certified System Administrator</p>
+      </div>
+      <div class="bg-gray-800 border border-red-500 rounded-lg shadow-lg p-6 m-4 w-80">
+        <h3 class="text-2xl font-semibold text-white mb-2">AWS Certified Cloud Practitioner</h3>
+        <p class="text-gray-300">Validate your overall understanding of the AWS Cloud.</p>
+      </div>
+      <div class="bg-gray-800 border border-red-500 rounded-lg shadow-lg p-6 m-4 w-80">
+        <h3 class="text-2xl font-semibold text-white mb-2">AWS Solutions Architect Professional</h3>
+        <p class="text-gray-300">Design and deploy dynamically scalable, highly available systems on AWS.</p>
+      </div>
+      <div class="bg-gray-800 border border-red-500 rounded-lg shadow-lg p-6 m-4 w-80">
+        <h3 class="text-2xl font-semibold text-white mb-2">AWS DevOps Certification</h3>
+        <p class="text-gray-300">Expertise in provisioning, operating, and managing distributed application systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+    <!-- Job Roles Section -->
+    <section id="jobs" class="py-16 px-4 bg-gray-900">
+      <div class="container mx-auto text-center">
+        <h6 class="text-sm md:text-lg text-red-400 font-bold mb-2">What You Can Achieve</h6>
+        <h2 class="text-4xl md:text-6xl font-bold mb-5">Job Roles</h2>
+        <p class="text-center mb-20 text-gray-200">
+          Unlock a wide range of exciting career opportunities in the tech industry with the skills acquired from this course. Equip yourself with the expertise necessary to excel in today's competitive job market and drive innovation in your organization.
+        </p>
+    
+        <div class="flex justify-center space-x-6 flex-wrap">
+          <div class="bg-gray-800 border border-red-500 rounded-lg shadow-lg p-6 m-4 w-80">
+            <h3 class="text-2xl font-semibold text-white mb-2">Linux Administrator</h3>
+            <p class="text-gray-300">Take charge of managing and maintaining Linux-based systems and servers, ensuring optimal performance and security.</p>
+          </div>
+          <div class="bg-gray-800 border border-red-500 rounded-lg shadow-lg p-6 m-4 w-80">
+            <h3 class="text-2xl font-semibold text-white mb-2">Cloud Administrator (Cloud Engineer)</h3>
+            <p class="text-gray-300">Design, implement, and manage robust cloud infrastructure and services, supporting your organization’s digital transformation.</p>
+          </div>
+          <div class="bg-gray-800 border border-red-500 rounded-lg shadow-lg p-6 m-4 w-80">
+            <h3 class="text-2xl font-semibold text-white mb-2">Cloud Solutions Architect</h3>
+            <p class="text-gray-300">Architect scalable and reliable cloud solutions tailored to meet diverse business needs and enhance operational efficiency.</p>
+          </div>
+          <div class="bg-gray-800 border border-red-500 rounded-lg shadow-lg p-6 m-4 w-80">
+            <h3 class="text-2xl font-semibold text-white mb-2">DevOps Engineer</h3>
+            <p class="text-gray-300">Implement CI/CD pipelines and automate infrastructure to ensure efficient software delivery and seamless collaboration across teams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     
       <!-- Instructor Section -->
       <section id="instructor" class="py-16 px-4 bg-gray-800">
@@ -652,7 +1287,7 @@
       <!-- JavaScript for Countdown Timer and Accordion -->
       <script>
         // Set the target date and time
-        const targetDate = new Date("October 5, 2024 12:00:00").getTime();
+        const targetDate = new Date("November 5, 2024 12:00:00").getTime();
     
         // Update the countdown every second
         const countdownInterval = setInterval(() => {
